@@ -20,9 +20,19 @@ const io = new Server(server,{
 
 io.on('connection', (socket)=>{
     console.log("Connection is established");
+
+    socket.on("join",(data)=>{
+        // console.log(data);
+        socket.username =data;
+    })
     socket.on('new_message', (message)=>{
+        //collecting username and message before broadcasting it
+        let userMessage={
+            username: socket.username,
+            message:message
+        }
         //broadcast this message to all the clients.
-        socket.broadcast.emit('broadcast_message',message);//broadcasting the message that client send
+        socket.broadcast.emit('broadcast_message',userMessage);//broadcasting the message that client send
     })
 
     socket.on('disconnect', ()=>{
