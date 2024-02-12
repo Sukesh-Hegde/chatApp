@@ -47,6 +47,17 @@
             }
         });
 
+        // Display messages on the UI. when previous msg are loaded
+
+        socket.on('load_messages', (messages)=>{
+            messages.forEach(message => {
+                const messageElement = document.createElement("div");
+                messageElement.innerText = new Date(message.timestamp).toDateString() + "-" + message.username + ":" + message.message;
+                messageList.appendChild(messageElement);
+                    
+            });
+        })
+
         //Listen for broadcast message, and add it to the list
         socket.on('broadcast_message',(userMessage)=>{
             const messageElement = document.createElement("div");
