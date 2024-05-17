@@ -9,6 +9,9 @@ import { chatModel } from './chat.schema.js';
 const http=require("http");
 const express=require("express");
 const { URLSearchParams } = require("url");
+<<<<<<< HEAD
+>>>>>>> parent of e7846ec (updated)
+=======
 >>>>>>> parent of e7846ec (updated)
 
 const app = express();
@@ -28,6 +31,9 @@ app.get('/',(req,res)=>{
 })
 
 /* Sicket.io Setup */
+<<<<<<< HEAD
+>>>>>>> parent of e7846ec (updated)
+=======
 >>>>>>> parent of e7846ec (updated)
 
 // 2. Create socket server.
