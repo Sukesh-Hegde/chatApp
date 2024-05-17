@@ -37,7 +37,6 @@ The Chat App is a real-time chat application that allows users to join chat and 
 ![Screenshot 2024-04-21 at 8 48 48 PM](https://github.com/Sukesh-Hegde/chatApp/assets/128299015/887c1a09-b73d-4368-8597-412afa214062)
 ![Screenshot 2024-04-21 at 8 49 14 PM](https://github.com/Sukesh-Hegde/chatApp/assets/128299015/b5b5888e-3fa6-4bc3-a74a-14236a405edc)
 ![Screenshot 2024-04-21 at 8 49 26 PM](https://github.com/Sukesh-Hegde/chatApp/assets/128299015/81208599-ccee-4353-8a52-e0e9b1e727fd)
-![Screenshot 2024-04-21 at 8 55 31 PM](https://github.com/Sukesh-Hegde/chatApp/assets/128299015/6446c948-713e-4f72-ba91-dd64912c3629)
 
 
 ## Contributing
