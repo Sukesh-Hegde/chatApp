@@ -1,46 +1,17 @@
 
-io.on('connection', (socket)=>{
-    console.log("Connection is established");
+const http = require("http");
+const express=require("express");
 
-    socket.on("join",(data)=>{
-        // console.log(data);
-        socket.username = data;
-        // send old messages to the clients.
-        chatModel.find().sort({ timestamp: 1 }).limit(50)
-            .then(messages => {
-                socket.emit('load_messages', messages);// sending messages back to client
-            }).catch(err => {
-                console.log(err);
-            })
-    })
-    socket.on('new_message', (message)=>{
-        //collecting username and message before broadcasting it
-        let userMessage={
-            username: socket.username,
-            message:message
-        }
-        //saving the chats in DB
-        const newChat = new chatModel({
-            username: socket.username,
-            message: message,
-            timestamp: new Date()
-        });
-        newChat.save()
+const app = express();
 
-        socket.broadcast.emit('broadcast_message',userMessage);//broadcasting the message that client send
-    })
+const server = http.createServer(app);
+const port = process.env.PORT || 8000;
 
-    socket.on('disconnect', ()=>{
-        console.log("Connection is disconnected");
-    })
-});
+app.use(express.static(__dirname+'/public'));
 
-server.listen(3000, ()=>{
-    console.log("App is listening on 3000");
-    connect();
+app.get('/',(req,res)=>{
+    res.sendFile(__dirname+'/index.html')
 })
-
-
 /* Sicket.io Setup */
 
 // 2. Create socket server.
