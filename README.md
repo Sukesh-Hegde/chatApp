@@ -1,5 +1,4 @@
-#Chat App
-#A simple real-time chat application built using Node.js, Express, and Socket.IO.
+# Chat App
 
 ##Table of Contents
 - [Description](#Description)
