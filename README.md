@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 #Chat App
 A simple real-time chat application built using Node.js, Express, and Socket.IO.
 
@@ -42,4 +40,3 @@ The Chat App is a real-time chat application that allows users to join chat and 
 ##Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you find any bugs or want to suggest improvements.
 
->>>>>>> parent of 48744c4 (Update README.md)
