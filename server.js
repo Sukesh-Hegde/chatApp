@@ -10,6 +10,9 @@ const http=require("http");
 const express=require("express");
 const { URLSearchParams } = require("url");
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of e7846ec (updated)
+=======
 >>>>>>> parent of e7846ec (updated)
 =======
 >>>>>>> parent of e7846ec (updated)
@@ -32,6 +35,9 @@ app.get('/',(req,res)=>{
 
 /* Sicket.io Setup */
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of e7846ec (updated)
+=======
 >>>>>>> parent of e7846ec (updated)
 =======
 >>>>>>> parent of e7846ec (updated)
