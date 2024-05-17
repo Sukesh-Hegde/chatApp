@@ -1,5 +1,5 @@
 #Chat App
-A simple real-time chat application built using Node.js, Express, and Socket.IO.
+#A simple real-time chat application built using Node.js, Express, and Socket.IO.
 
 ##Table of Contents
 - [Description](#Description)
@@ -10,22 +10,22 @@ A simple real-time chat application built using Node.js, Express, and Socket.IO.
 - [Contributing](#Contributing)
 
 
-##Description
+## Description
 The Chat App is a real-time chat application that allows users to join chat and exchange messages instantly. It is built using Node.js for the server-side logic, Express.js as the web framework, and Socket.IO for real-time communication between the server and clients.
 
-##Features
+## Features
   Real-time messaging: Messages are sent and received instantly without the need to refresh the page.
   User authentication: Users can enter their username before joining the chat room.
   User list: Displays the list of users currently online in the chat room.
   Responsive design: The application is responsive and works well on both desktop and mobile devices.
   Count: Total count of people present in the chat
 
-##Installation
+## Installation
   Clone the repository:
   Install dependencies:
       npm start
 
-##Usage      
+## Usage      
   Open your web browser and navigate to http://localhost:3000 to access the chat application.
   Enter your username and start chatting with other users in real-time.
   
@@ -37,6 +37,6 @@ The Chat App is a real-time chat application that allows users to join chat and 
 ![Screenshot 2024-04-21 at 8 49 26 PM](https://github.com/Sukesh-Hegde/chatApp/assets/128299015/81208599-ccee-4353-8a52-e0e9b1e727fd)
 
 
-##Contributing
+## Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you find any bugs or want to suggest improvements.
 
