@@ -26,7 +26,7 @@ The Chat App is a real-time chat application that allows users to join chat and 
       npm start
 
 ## Usage      
-  Open your web browser and navigate to http://localhost:3000 to access the chat application.
+  Open your web browser and navigate to http://localhost:8000 to access the chat application.
   Enter your username and start chatting with other users in real-time.
   
 ##Screenshots
