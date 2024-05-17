@@ -1,5 +1,4 @@
 
-
 io.on('connection', (socket)=>{
     console.log("Connection is established");
 
@@ -28,7 +27,6 @@ io.on('connection', (socket)=>{
         });
         newChat.save()
 
-        //broadcast this message to all the clients.
         socket.broadcast.emit('broadcast_message',userMessage);//broadcasting the message that client send
     })
 
@@ -41,8 +39,7 @@ server.listen(3000, ()=>{
     console.log("App is listening on 3000");
     connect();
 })
-<<<<<<< HEAD
-=======
+
 
 /* Sicket.io Setup */
 
@@ -74,4 +71,3 @@ server.listen(port,()=>{
     console.log(`Server started at ${port}`);
 });
 
->>>>>>> parent of 3c113ae (displaying msg completed)
