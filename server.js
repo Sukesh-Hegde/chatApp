@@ -1,14 +1,34 @@
+<<<<<<< HEAD
 import express from 'express';
 import {Server} from 'socket.io';
 import cors from 'cors';
 import http from 'http';
 import { connect } from './Config.js';
 import { chatModel } from './chat.schema.js';
+=======
+const http=require("http");
+const express=require("express");
+const { URLSearchParams } = require("url");
+>>>>>>> parent of e7846ec (updated)
 
 const app = express();
 
+<<<<<<< HEAD
 // 1. Creating server using http.
 const server = http.createServer(app);
+=======
+//1. creating server
+const server=http.createServer(app);
+const port=process.env.PORT || 3000;
+
+app.use(express.static(__dirname+'/public'));
+
+app.get('/',(req,res)=>{
+    res.sendFile(__dirname + "/index.html");
+})
+
+/* Sicket.io Setup */
+>>>>>>> parent of e7846ec (updated)
 
 // 2. Create socket server.
 const io = new Server(server,{
