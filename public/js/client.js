@@ -13,7 +13,6 @@ do{
     username=prompt("Enter your name: ");
 }while(!username);
 
-/*It will e called when user will join */
 socket.emit("new-user-joined",username);//it will be passed to (io.on) in server.js file code
 
 /* Notifying that user is joined */
@@ -35,6 +34,8 @@ function userJoinLeft(name,status){
     let content = `<p><b>${name}</b> ${status} the chat</p>`;
     div.innerHTML=content; //inserting the content insid the div
     chats.appendChild(div);
+    chats.scrollTop = chats.scrollHeight;
+
 }
 
 /* For updating users list and user counts */
@@ -78,4 +79,9 @@ function appendMessage(data,status){
     `;
     div.innerHTML=content;
     chats.appendChild(div);
+    chats.scrollTop=chats.scrollHeight;
 }
+
+socket.on('message',(data)=>{
+  appendMessage(data,'incoming');
+})
